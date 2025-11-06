@@ -1,8 +1,15 @@
 <?php
-
-    echo "<h3>Quem Somos</h3>";
+    echo "<h3 style='font-family: Arial, sans-serif; font-weight: bold;'>Quem Somos</h3>";
 ?>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus dolor felis, at facilisis purus interdum sed. Maecenas porttitor lacus sed semper accumsan. Integer fermentum massa massa, id aliquet ipsum faucibus vitae. Aenean vehicula eleifend euismod. Curabitur in lobortis eros. Nunc sed sollicitudin nunc, id pellentesque arcu. Vivamus feugiat erat massa, non semper magna convallis eget. Aliquam erat volutpat. Duis sagittis diam nunc, sit amet elementum nibh iaculis eu. Morbi sollicitudin metus et justo scelerisque dictum. Donec volutpat non dolor non congue.</p>
+<div style="font-family: Verdana, sans-serif; font-weight: bold; line-height: 1.6;">
+    <p>A SuperMercado Exemplar é uma empresa dedicada a oferecer produtos de qualidade e um atendimento de excelência para todos os nossos clientes. Fundada em 2010, nossa missão é fornecer alimentos frescos, produtos de higiene e utilidades domésticas com confiança e preços justos.</p>
 
-<p>   Phasellus semper in nunc eget sollicitudin. In vehicula ipsum sem, in venenatis felis maximus sed. Sed velit quam, placerat non dictum rhoncus, mollis et libero. Nam felis mauris, pretium posuere consequat non, egestas quis lectus. Vestibulum tincidunt ac dui eu elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent varius lacus a accumsan mollis. Proin vehicula imperdiet libero, vitae molestie sapien. Cras porttitor risus tempor purus eleifend, ut venenatis mauris facilisis. Nam in faucibus felis. Vestibulum quis magna convallis, consequat orci vitae, condimentum ex. Suspendisse tristique fermentum velit id pharetra.</p>
+    <p>Nossa equipe é formada por profissionais experientes e apaixonados pelo que fazem. Investimos constantemente em treinamento e tecnologia para garantir que cada visita ao nosso supermercado seja agradável e satisfatória.</p>
+
+    <p>Além de nosso amplo portfólio de produtos, valorizamos práticas sustentáveis e responsabilidade social. Estamos comprometidos em reduzir nosso impacto ambiental, promovendo ações de reciclagem, consumo consciente e parcerias com fornecedores que compartilham dos mesmos valores.</p>
+
+    <p>Nosso compromisso é com a qualidade, a transparência e a inovação. Trabalhamos diariamente para oferecer aos nossos clientes não apenas produtos, mas experiências que gerem confiança e satisfação. Queremos ser mais que um supermercado, queremos ser um ponto de referência na comunidade e um parceiro de confiança para todas as famílias.</p>
+
+    <p>Visite-nos e descubra um espaço pensado para você, onde qualidade, variedade e bom atendimento caminham juntos. SuperMercado Exemplar: seu mercado de confiança, sempre perto de você.</p>
+</div>

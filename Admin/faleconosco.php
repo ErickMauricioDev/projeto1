@@ -1,23 +1,37 @@
 <?php
+require_once "admin/config.inc.php";
 
-    require_once "admin/config.inc.php";
-    $sql = "SELECT * FROM fale_conosco";
-    $resultado = mysqli_query($conexao, $sql);
+// Se o formulário for enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $assunto = $_POST["assunto"];
+    $mensagem = $_POST["mensagem"];
 
+    $sql = "INSERT INTO fale_conosco (nome, email, assunto, mensagem) 
+            VALUES ('$nome', '$email', '$assunto', '$mensagem')";
+
+    if (mysqli_query($conexao, $sql)) {
+        echo "<p style='color: green;'>Mensagem enviada com sucesso! Obrigado pelo contato.</p>";
+    } else {
+        echo "<p style='color: red;'>Erro ao enviar mensagem: " . mysqli_error($conexao) . "</p>";
+    }
+}
 ?>
-<h3>Fale Conosco</h3>
-<form action="?pg=cadastra_fale_conosco" method="post">
-    <div class="mb-3 mt-3">
-        <label for="email" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Digite seu email" name="email">
-    </div>
-    <div class="mb-3">
-        <label for="nome" class="form-label">Nome:</label>
-        <input type="text" class="form-control" id="nome" placeholder="Seu nome" name="nome">
-    </div>
-    <div class="mb-3">
-        <label for="mensagem" class="form-label">Mensagem:</label>
-        <textarea class="form-control" id="mensagem" placeholder="Sua mensagem" name="mensagem"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
+
+<h2>Fale Conosco</h2>
+<form method="POST">
+    <label>Nome:</label><br>
+    <input type="text" name="nome" required><br><br>
+
+    <label>E-mail:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Assunto:</label><br>
+    <input type="text" name="assunto" required><br><br>
+
+    <label>Mensagem:</label><br>
+    <textarea name="mensagem" rows="5" cols="40" required></textarea><br><br>
+
+    <input type="submit" value="Enviar">
 </form>
