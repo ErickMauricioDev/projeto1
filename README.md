@@ -25,3 +25,10 @@ Este projeto é um sistema administrativo feito em **PHP puro**, **HTML** e **CS
    - Senha: `1234`
 
 > Observação: Se algum recurso não aparecer, verifique se o banco de dados foi importado corretamente e se o servidor local (XAMPP, WAMP, etc.) está ativo.
+
+
+
+
+
+
+Gupo: Davi Guedes Fragoso Vieira, Erick Mauricio Soares Almeida, Vitor Jales Ramos Diniz
