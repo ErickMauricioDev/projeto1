@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 06/11/2025 às 23:37
+-- Tempo de geração: 07/11/2025 às 05:16
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -67,7 +67,9 @@ CREATE TABLE `fale_conosco` (
 
 INSERT INTO `fale_conosco` (`id`, `nome`, `email`, `assunto`, `mensagem`, `data_envio`) VALUES
 (1, 'Padaria Central', 'daviguedes0103@gmail.com', 'Acidende de trabalho ', 'Durante o expediente, ao tentar trocar a garrafa de água do bebedouro, o funcionário subestimou o peso da garrafa e superestimou a própria força. O resultado foi uma coreografia improvisada digna de Dança dos Famosos, com direito a giros, tropeços e um banho completo de 20 litros de água gelada.\r\n\r\nFelizmente, nenhum ferimento grave foi registrado — apenas o orgulho molhado e o chão do escritório que ficou digno de uma piscina olímpica. O bebedouro, apesar do susto, passa bem.', '2025-11-06 19:23:58'),
-(2, 'Padaria Central', 'daviguedes0103@gmail.com', 'Acidende de trabalho ', 'Durante o expediente, ao tentar trocar a garrafa de água do bebedouro, o funcionário subestimou o peso da garrafa e superestimou a própria força. O resultado foi uma coreografia improvisada digna de Dança dos Famosos, com direito a giros, tropeços e um banho completo de 20 litros de água gelada.\r\n\r\nFelizmente, nenhum ferimento grave foi registrado — apenas o orgulho molhado e o chão do escritório que ficou digno de uma piscina olímpica. O bebedouro, apesar do susto, passa bem.', '2025-11-06 19:27:22');
+(2, 'Padaria Central', 'daviguedes0103@gmail.com', 'Acidende de trabalho ', 'Durante o expediente, ao tentar trocar a garrafa de água do bebedouro, o funcionário subestimou o peso da garrafa e superestimou a própria força. O resultado foi uma coreografia improvisada digna de Dança dos Famosos, com direito a giros, tropeços e um banho completo de 20 litros de água gelada.\r\n\r\nFelizmente, nenhum ferimento grave foi registrado — apenas o orgulho molhado e o chão do escritório que ficou digno de uma piscina olímpica. O bebedouro, apesar do susto, passa bem.', '2025-11-06 19:27:22'),
+(3, 'teste teste', 'gdjshbdsj.gmial.com', 'as nuvens', 'são brancas e pesadas', '2025-11-07 03:12:08'),
+(4, 'Zé zorba', 'sddewfd@gmai.com', 'tijolos no mar', 'fogo naa agua e agua no fogo', '2025-11-07 03:32:28');
 
 -- --------------------------------------------------------
 
@@ -127,7 +129,7 @@ ALTER TABLE `clientes`
 -- AUTO_INCREMENT de tabela `fale_conosco`
 --
 ALTER TABLE `fale_conosco`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `produtos`
