@@ -1,0 +1,192 @@
+/* ================================
+   STYLES.CSS - MENU MODERNO + FUNDO GLOBAL
+=================================*/
+:root {
+  --primary: #0a0f2e;   /* Azul bem escuro */
+  --accent: #14256e;    /* Azul médio */
+  --bg: #0f1720;
+  --text: #ffffff;
+  --muted: #cbd5e1;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: url('../imagens/Terratec12.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff; /* deixa o texto branco para melhor contraste */
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Efeito de escurecimento e leve desfoque no fundo */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25); /* antes 0.45 → mais claro agora */
+  backdrop-filter: blur(3px);
+  z-index: -1;
+}
+
+/* Sombra leve no texto para legibilidade */
+body, p, h1, h2, h3, h4, h5, h6 {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* ================================
+   HEADER / MENU
+=================================*/
+.header {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  color: var(--text);
+  padding: 10px 16px;
+  box-shadow: 0 4px 18px rgba(11, 116, 218, 0.12);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text);
+  text-decoration: none;
+}
+.logo img { height: 36px; border-radius: 6px; }
+
+/* Navegação */
+.nav {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.nav a {
+  color: rgba(255,255,255,0.95);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background .18s, transform .12s;
+  font-weight: 600;
+}
+.nav a:hover { background: rgba(255,255,255,0.08); transform: translateY(-2px); }
+
+/* Botão especial */
+.nav .cta {
+  background: var(--text);
+  color: var(--primary);
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(11,116,218,0.12);
+}
+
+/* Mobile */
+.hamburger {
+  display: none;
+  width: 40px; height: 40px;
+  align-items: center; justify-content: center;
+  background: rgba(255,255,255,0.06);
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  color: var(--text);
+}
+.mobile-menu {
+  display: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding: 8px 16px;
+}
+@media (max-width:800px){
+  .nav { display:none; }
+  .hamburger { display:flex; }
+  .mobile-menu { display:none; flex-direction:column; gap:6px; }
+  .mobile-menu a { padding:10px; border-radius:8px; color:var(--text); }
+  .mobile-menu.open { display:flex; }
+}
+
+/* Layout container */
+.container {
+  max-width:1100px;
+  margin:0 auto;
+  padding:18px;
+}
+
+/* ================================
+   PRODUTOS - LISTAGEM BONITA
+=================================*/
+.produtos-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  padding: 24px;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+
+.produtos-container h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.produtos-container a.novo-produto {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 15px;
+  transition: background 0.2s, transform 0.2s;
+}
+.produtos-container a.novo-produto:hover {
+  background: #0b74da;
+  transform: translateY(-2px);
+}
+
+/* Tabela */
+.produtos-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.produtos-table th {
+  background: var(--primary);
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.produtos-table td {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.produtos-table tr:hover td {
+  background: rgba(240, 248, 255, 0.7);
+}
+
+.produtos-table a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.produtos-table a:hover {
+  color: #0b74da;
+}

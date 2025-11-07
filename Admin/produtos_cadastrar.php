@@ -1,5 +1,7 @@
 <?php
-if (!isset($_SESSION)) session_start(); // inicia sessão se ainda não tiver
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 // Proteção para admin
 if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
     header("Location: admin/login.php");

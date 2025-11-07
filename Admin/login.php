@@ -1,26 +1,27 @@
-<?php
-session_start();
+<?php 
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 require_once "config.inc.php";
 
 $erro = "";
 
-//  Se já estiver logado, redireciona direto para o painel
+// Se já estiver logado, redireciona direto para o painel
 if (isset($_SESSION["logado"]) && $_SESSION["logado"] === true) {
-     
     header("Location: painel.php");
-
     exit;
 }
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $usuario = trim($_POST["usuario"]);
-    $senha   = trim($_POST["senha"]);
+// Só processa se o formulário for enviado
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $usuario = trim($_POST["usuario"] ?? '');
+    $senha   = trim($_POST["senha"] ?? '');
 
     // Login fixo
     if ($usuario === "admin" && $senha === "1234") {
         $_SESSION["logado"] = true;
-       header("Location: painel.php");
-
+        header("Location: painel.php");
         exit;
     } else {
         $erro = "Usuário ou senha incorretos!";
@@ -57,4 +58,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             border-radius: 5px;
         }
         input[type="submit"] {
-            background-color:
+            background-color: #0b74da;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #095bb3;
+        }
+        .erro {
+            color: #ff5555;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="">
+        <h2>Login Administrativo</h2>
+        <?php if (!empty($erro)): ?>
+            <div class="erro"><?= htmlspecialchars($erro) ?></div>
+        <?php endif; ?>
+        <input type="text" name="usuario" placeholder="Usuário" required>
+        <input type="password" name="senha" placeholder="Senha" required>
+        <input type="submit" value="Entrar">
+    </form>
+</body>
+</html>

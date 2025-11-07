@@ -1,5 +1,8 @@
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 require_once "config.inc.php";
 
 if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {

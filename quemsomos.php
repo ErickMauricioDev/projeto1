@@ -1,8 +1,11 @@
 <?php
-
     echo "<h3>Quem Somos</h3>";
 ?>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus dolor felis, at facilisis purus interdum sed. Maecenas porttitor lacus sed semper accumsan. Integer fermentum massa massa, id aliquet ipsum faucibus vitae. Aenean vehicula eleifend euismod. Curabitur in lobortis eros. Nunc sed sollicitudin nunc, id pellentesque arcu. Vivamus feugiat erat massa, non semper magna convallis eget. Aliquam erat volutpat. Duis sagittis diam nunc, sit amet elementum nibh iaculis eu. Morbi sollicitudin metus et justo scelerisque dictum. Donec volutpat non dolor non congue.</p>
+<p>A <strong>Nova Terra</strong> nasceu com o propósito de unir tecnologia e inovação para transformar ideias em soluções reais. Somos uma equipe apaixonada por desenvolvimento e inovação digital, comprometida em entregar resultados que impulsionam o crescimento e a presença de nossos clientes no mundo online.</p>
 
-<p>   Phasellus semper in nunc eget sollicitudin. In vehicula ipsum sem, in venenatis felis maximus sed. Sed velit quam, placerat non dictum rhoncus, mollis et libero. Nam felis mauris, pretium posuere consequat non, egestas quis lectus. Vestibulum tincidunt ac dui eu elementum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent varius lacus a accumsan mollis. Proin vehicula imperdiet libero, vitae molestie sapien. Cras porttitor risus tempor purus eleifend, ut venenatis mauris facilisis. Nam in faucibus felis. Vestibulum quis magna convallis, consequat orci vitae, condimentum ex. Suspendisse tristique fermentum velit id pharetra.</p>
+<p>Com uma abordagem moderna e estratégica, oferecemos serviços que combinam criatividade, desempenho e segurança. Cada projeto é tratado com atenção aos detalhes — desde o planejamento até a entrega final — garantindo a melhor experiência possível para nossos parceiros.</p>
+
+<p>Nosso diferencial está na <strong>dedicação em entender o que realmente importa</strong> para cada cliente. Acreditamos que tecnologia de ponta só faz sentido quando usada para simplificar processos, conectar pessoas e criar oportunidades. É por isso que buscamos constantemente a excelência em tudo o que fazemos.</p>
+
+<p><em>Na Nova Terra, o futuro é construído com propósito, inovação e confiança.</em></p>

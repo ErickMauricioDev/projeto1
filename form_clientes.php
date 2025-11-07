@@ -1,4 +1,4 @@
-<form action="?pg=cadastra_clientes" method="post">
+<form action="?pg=from_clientes" method="post">
     <label>Nome do cliente:</label>
     <input type="text" name="cliente">
     <label>Cidade:</label>

@@ -1,5 +1,8 @@
 <?php
-session_start();
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+
 
 //  Proteção: só permite acesso se estiver logado
 if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
@@ -53,7 +56,9 @@ if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
 
 <div class="btn-container">
     <a href="admin_fale_conosco.php" class="btn">📩 Ver mensagens do Fale Conosco</a> 
-    <a href="../logout.php" class="btn logout">🚪 Sair</a> 
+    <a href="../index.php" class="btn logout">Voltar para a Home</a>
+
+
 </div>
 
 </body>

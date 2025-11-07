@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
 
 //  Proteção: só permite acesso se estiver logado
 if (!isset($_SESSION['logado']) || $_SESSION['logado'] !== true) {
@@ -19,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO clientes (nome, cidade, uf) VALUES ('$nome', '$cidade', '$uf')";
 
     if (mysqli_query($conexao, $sql)) {
-        // 🔹 Redireciona de volta para a página de listagem (sem JavaScript)
+        // 🔹 Redireciona de volta para a página de listagem 
         header("Location: ?pg=clientes");
         exit;
     } else {
